@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Multimedia Page</title>
+    <style>
+        /* Basic Reset */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        /* Headings */
+        h2 {
+            color: #333;
+        }
+
+        /* List Styling */
+        ol {
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        /* Image */
+        img {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 5px;
+            display: block;
+            margin-top: 10px;
+        }
+
+        /* Table Styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: white;
+        }
+
+        /* Form Styling */
+        form {
+            background: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Ordered List with Roman Numerals</h2>
+    <ol type="I">
+        <li>One</li>
+        <li> Two</li>
+        <li> Three</li>
+        <li> Four</li>
+        <li> Five</li>
+    </ol>
+    <h2>External Image</h2>
+    <img src="https://www.pexels.com/photo/elegant-white-swan-glides-on-tranquil-lake-31046982/" alt="Elegant White Swan Glides on Tranquil Lake" width="600" height="400">
+    <h2>Contact List</h2>
+<table border="1">
+    <tr>
+        <th>Name</th>
+        <th>Address</th>
+        <th>Mobile</th>
+        <th>Email</th>
+    </tr>
+    <tr>
+        <td>Michael Otieno</td>
+        <td>789 Road, Kisumu</td>
+        <td>+254712000111</td>
+        <td>michael@example.com</td>
+    </tr>
+    <tr>
+        <td>Faith Wanjiku</td>
+        <td>321 Lane, Nakuru</td>
+        <td>+254790456123</td>
+        <td>faith@example.com</td>
+    </tr>
+    <tr>
+        <td>Elijah Kimani</td>
+        <td>987 Blvd, Eldoret</td>
+        <td>+254721999000</td>
+        <td>elijah@example.com</td>
+    </tr>
+</table>
+<h2>Registration Form</h2>
+<form action="#" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="6" required>
+    <br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" required>
+    <br><br>
+
+    <label for="gender">Gender:</label>
+    <select id="gender" name="gender" required>
+        <option value="">Select Gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+    <br><br>
+
+    <!-- Radio Buttons -->
+    <label>Subscription Plan:</label><br>
+    <input type="radio" id="basic" name="plan" value="basic" required>
+    <label for="basic">Basic</label>
+    <input type="radio" id="premium" name="plan" value="premium">
+    <label for="premium">Premium</label>
+    <br><br>
+
+    <!-- Checkboxes -->
+    <label>Interests:</label><br>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label>
+    <input type="checkbox" id="gaming" name="interests" value="gaming">
+    <label for="gaming">Gaming</label>
+    <input type="checkbox" id="reading" name="interests" value="reading">
+    <label for="reading">Reading</label>
+    <br><br>
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register">
+</form>
+
+
+</body>
+</html>
